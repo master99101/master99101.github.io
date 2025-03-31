@@ -1,0 +1,731 @@
+/* Общие стили */
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least the height of the viewport */
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Фиксируем шапку при прокрутке */
+    top: 0;
+    z-index: 100; /* Убеждаемся, что шапка перекрывает другие элементы */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Распределяем элементы по краям */
+    align-items: center;
+    padding: 0 20px; /* Добавляем отступы по бокам */
+}
+
+/* Стили для меню */
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu .logo img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+
+/* Стили для панели поиска домена в шапке */
+.domain-search-header {
+    display: flex;
+    align-items: center;
+}
+
+.domain-input {
+    display: flex;
+}
+
+.domain-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.domain-input button {
+    padding: 10px 20px;
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.domain-input button:disabled {
+    background-color: #eee;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* Стили для переключателей языка и аутентификации */
+.language-auth {
+    display: flex;
+    align-items: center;
+}
+
+.language-auth > div {
+    margin-left: 20px;
+}
+
+.language-auth a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.language-auth a.active {
+    font-weight: bold; /* Выделяем текущий язык */
+    color: black;
+}
+
+.hero {
+    background: url('domains.b4940b93.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 70px 0;
+    border-radius: 20px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Затемнение фона */
+    z-index: 0;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 50px;
+    position: relative;
+    z-index: 1;
+    text-align: left; /* Выравниваем текст по левому краю */
+}
+
+.hero h1 {
+    font-size: 3.5em; /* Увеличиваем размер заголовка */
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em; /* Уменьшаем размер описания */
+    font-weight: 300; /* Делаем текст светлее */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-bar input {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    flex: 1; /* Позволяет полю ввода занимать больше места */
+}
+
+.search-bar input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-bar button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.search-bar button:hover {
+    background-color: #367C39;
+}
+
+.search-bar a {
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.search-bar a img {
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.search-bar a:hover img {
+    transform: scale(1.1);
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.domain-search {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.domain-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.domain-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.domain-input button {
+    padding: 10px 20px;
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.domain-input button:disabled {
+    background-color: #eee;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.programming-languages {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-button.active {
+    background-color: #333;
+    color: white;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.tab-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+footer {
+    background-color: #f8f8f8; /* Цвет фона футера */
+    padding: 20px; /* Отступы */
+    text-align: left; /* Выравнивание текста */
+}
+
+.footer-container {
+    display: flex; /* Используем flexbox для расположения элементов */
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+}
+
+.footer-logo img {
+    max-width: 100px; /* Максимальная ширина логотипа */
+}
+
+.footer-info, .footer-services, .footer-contacts, .footer-social {
+    flex: 1; /* Каждый блок занимает равное пространство */
+    margin: 10px; /* Отступы между блоками */
+}
+
+.footer-bottom {
+    text-align: center; /* Выравнивание текста по центру */
+    margin-top: 20px; /* Отступ сверху */
+    font-size: 0.8em; /* Размер шрифта меньше стандартного */
+    color: gray; /* Цвет текста серый */
+}
+
+.footer-bottom a {
+    color: gray; /* Цвет ссылок серый */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+
+
+h2 {
+    font-size: 1.2em; /* Размер заголовка */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+}
+
+li {
+    margin: 5px 0; /* Отступы между элементами списка */
+}
+
+.programming-info {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.programming-info h2, .programming-info h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.programming-info p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* тема */
+
+.theme-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.theme-toggle img {
+    height: 30px;
+    width: 30px;
+}
+
+body.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark header {
+    background-color: #181A1B;
+}
+
+
+body.dark language-auth {
+    color: white;
+}
+body.dark .programming-info {
+    background-color: #181A1B; /* Темный фон в темной теме */
+    color: white; /* Белый текст для всего блока */
+}
+
+body.dark .programming-info h2,
+body.dark .programming-info h3 {
+    color: white; /* Белый текст для заголовков в темной теме */
+}
+
+body.dark .programming-info p {
+    color: #ddd; /* Светло-серый текст для параграфов в темной теме */
+}
+
+
+body.dark .hero::before {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+body.dark .hero {
+    color: #fff;
+}
+
+body.dark .search-bar input {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+body.dark .search-bar button {
+    background-color: #555;
+}
+
+body.dark footer {
+    background-color: #181A1B;
+}
+
+body.dark .language-auth {
+    color: white; /* Белый текст для всего блока */
+}
+
+body.dark .language-auth .language-switch a,
+body.dark .language-auth .user-switch a {
+    color: white; /* Белый текст для ссылок в темной теме */
+}
+
+body.dark .language-auth .language-switch a.active,
+body.dark .language-auth .user-switch a.active {
+    font-weight: bold; /* Выделение активной ссылки в темной теме */
+}
+.theme-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.theme-toggle img {
+    height: 30px;
+    width: 30px;
+}
+
+/* Основные стили для выпадающего меню */
+.dropdown {
+    position: relative; /* Для позиционирования выпадающего меню */
+    display: inline-block; /* Чтобы кнопка и меню были в одной строке */
+}
+
+.dropdown-toggle {
+    padding: 10px 15px;
+    background-color: #fff; /* Светлый фон для кнопки */
+    color: #333; /* Темный текст для кнопки */
+    border: 1px solid #ccc; /* Рамка для кнопки */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s; /* Плавный переход фона */
+}
+
+.dropdown-toggle:hover {
+    background-color: #f0f0f0; /* Изменение фона при наведении */
+}
+
+/* Стили для выпадающего меню */
+.dropdown-menu {
+    display: none; /* Скрываем меню по умолчанию */
+    position: absolute; /* Позиционируем меню относительно кнопки */
+    background-color: #fff; /* Светлый фон для меню */
+    border: 1px solid #ccc; /* Рамка для меню */
+    border-radius: 5px; /* Закругленные углы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для меню */
+    z-index: 1000; /* Чтобы меню было поверх других элементов */
+    opacity: 0; /* Начальная непрозрачность */
+    transition: opacity 0.3s ease; /* Плавный переход для появления */
+}
+
+/* Стили для пунктов меню */
+.dropdown-menu li {
+    list-style: none; /* Убираем маркеры списка */
+}
+
+.dropdown-menu a {
+    display: block; /* Делаем ссылки блочными элементами */
+    padding: 10px 15px; /* Отступы для ссылок */
+    color: #333; /* Темный текст для ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0; /* Изменение фона при наведении на ссылку */
+}
+
+/* Темная тема */
+body.dark .dropdown-toggle {
+    background-color: #444; /* Темный фон для кнопки в темной теме */
+    color: white; /* Белый текст для кнопки в темной теме */
+    border: 1px solid #666; /* Темная рамка для кнопки */
+}
+
+body.dark .dropdown-menu {
+    background-color: #444; /* Темный фон для меню в темной теме */
+    border: 1px solid #666; /* Темная рамка для меню */
+    opacity: 0; /* Начальная непрозрачность */
+}
+
+body.dark .dropdown-menu a {
+    color: white; /* Белый текст для ссылок в темной теме */
+}
+
+body.dark .dropdown-menu a:hover {
+    background-color: #555; /* Изменение фона при наведении на ссылку в темной теме */
+}
+
+
+
+
+/* Стили для кнопки */
+.support-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #000;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 9999;
+}
+
+
+/* Стили для чата */
+.chat-container {
+    position: fixed;
+    bottom: 120px; /* Поднимаем окно чата выше */
+    right: 20px;
+    width: 300px;
+    background: #fff; /* Светлый фон в обычной теме */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 9999;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.chat-header h3 {
+    margin: 0;
+}
+
+.close-chat {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.chat-messages {
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.chat-message {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 15px;
+    max-width: 80%;
+}
+
+.user-message {
+    background: #e0e0e0; /* Цвет сообщения пользователя */
+    margin-left: auto;
+}
+
+.system-message {
+    background: #4CAF50; /* Цвет системного сообщения */
+    color: white;
+    margin-right: auto;
+}
+
+.chat-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+/* Темная тема */
+body.dark .chat-container {
+    background: #333; /* Темный фон для контейнера чата */
+    color: white; /* Белый текст для контейнера чата */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Светлая тень для темной темы */
+}
+
+body.dark .chat-header h3 {
+    color: white; /* Белый текст для заголовка в темной теме */
+}
+
+body.dark .close-chat {
+    color: white; /* Белый цвет для кнопки закрытия в темной теме */
+}
+
+body.dark .chat-message {
+    color: white; /* Белый текст для сообщений в темной теме */
+}
+
+body.dark .user-message {
+    background: #555; /* Темный фон для сообщений пользователя в темной теме */
+}
+
+body.dark .system-message {
+    background: #4CAF50; /* Цвет системного сообщения остается тем же */
+}
+
+body.dark .chat-input {
+    border: 1px solid #666; /* Темная рамка для поля ввода в темной теме */
+}
+
+.support-link {
+    color: inherit; /* Унаследовать цвет от родительского элемента */
+    text-decoration: none; /* Убрать подчеркивание */
+}
+
+.support-link:hover {
+    text-decoration: underline; /* Добавить подчеркивание при наведении (по желанию) */
+}
+
+/* Стили для ссылок-кнопок */
+.interes {
+    display: inline-block; /* Делаем ссылки блочными элементами */
+    padding: 10px 20px; /* Отступы для кнопок */
+    background-color: transparent; /* Светлый фон для кнопок */
+    color: #333; /* Темный текст для кнопок */
+    border-radius: 5px; /* Закругленные углы */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход для фона и цвета */
+}
+
+.interes:hover {
+    background-color: #ddd; /* Изменение фона при наведении */
+    color: black; /* Изменение цвета текста при наведении */
+}
+
+/* Темная тема */
+body.dark .interes {
+    background-color: #444; /* Темный фон для кнопок в темной теме */
+    color: white; /* Белый текст для кнопок в темной теме */
+}
+
+body.dark .interes:hover {
+    background-color: #555; /* Изменение фона при наведении в темной теме */
+    color: white; /* Цвет текста остается белым при наведении */
+}
+
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    display: block;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: #333;
+}
+
+/* Стили для модального окна в темной теме */
+body.dark .modal-content {
+    background-color: #181A1B;
+    color: white;
+}
+
+body.dark .modal-close {
+    color: #ddd;
+}
+
+body.dark .modal-close:hover {
+    color: #fff;
+}
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-style.css">
+</head>
+<body>
+<button class="support-button" onclick="openChat()">?</button>
+
+<div class="chat-container" id="chatContainer">
+    <div class="chat-header">
+        <h3>Для вопросов и предложений</h3>
+        <button class="close-chat" onclick="closeChat()">×</button>
+    </div>
+    
+    <div class="chat-messages" id="chatMessages">
+        <div class="chat-message system-message">Чем могу быть полезен?</div>
+    </div>
+    
+    <input type="text" class="chat-input" id="chatInput" placeholder="Введите сообщение...">
+</div>
+
+<header>
+    <nav>
+        <div class="menu">
+            <a href="index.html" class="logo"><img src="logo.png" alt="Логотип"></a>
+            <div class="dropdown">
+                <button class="dropdown-toggle">все языки</button>
+                <ul class="dropdown-menu">
+                    <li><a href="PROJECT.html">Python</a></li>
+                    <li><a href="PROJECT2.html">C++</a></li>
+                    <li><a href="PROJECT3.html">C</a></li>
+                    <li><a href="PROJECT4.html">C#</a></li>
+                    <li><a href="PROJEKT5.html">Java</a></li>
+                    <li><a href="Js0.html">JavaScript</a></li>
+                    <li><a href="Ruby0.html">Ruby</a></li>
+                    <li><a href="Php0.html">PHP</a></li>
+                    <li><a href="Swift0.html">Swift</a></li>
+                    <li><a href="Go0.html">Go</a></li>
+<li><a href="Kotlin0.html">Kotlin</a></li>
+<li><a href="bash0.html">Bash</a></li>
+<li><a href="shell0.html">Shell</a></li>
+<li><a href="sql0.html">SQL</a></li>
+<li><a href="typeScript0.html">TypeScript</a></li>
+<li><a href="visualBasic0.html">VisualBasic</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="domain-search-header">
+        </div>
+
+        <div class="language-auth">
+            <div class="language-switch">
+                <a href="#" class="active">русский</a>
+                <a href="#">english</a>
+            </div>
+            <div>
+                <button id="theme-toggle" class="theme-toggle">
+                    <img id="theme-icon" src="night.png" alt="Night Mode">
+                </button>
+            </div>
+            <div class="user-switch">
+                <a href="#" class="active">вход</a>
+                <a href="#">регистрация</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Языки программирования</h1>
+        <p>Просто, без купюр =)</p>
+        <div class="search-bar">
+            <input type="text" placeholder="ваш язык программирования">
+            <button id="check-domain-button">Поиск</button>
+            <div class="error-message" style="display: none; color: red; font-size: 0.9em; margin-top: 5px;"></div>
+        </div>
+    </div>
+</section>
+
+<section class="programming-languages">
+    <h2>Сложно выбрать? Вот наши рекомендации:</h2>
+    <div class="tabs">
+        <button class="tab-button active" data-tab="popular">Популярные</button>
+        <button class="tab-button" data-tab="other">Подборка редакции</button>
+    </div>
+    <div class="tab-content" id="popular">
+<a href="Kotlin0.html">Kotlin</a>
+<a href="PROJEKT5.html">Java</a>
+        <a href="PROJECT.html">Python</a>
+        <a href="PROJECT4.html">C#</a>
+    </div>
+    <div class="tab-content" id="other" style="display: none;">
+        <a href="Swift0.html">Swift</a>
+        <a href="Js0.html">JavaScript</a>
+    </div>
+</section>
+
+<main>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="content-sidebar">
+                <div class="table-of-contents">
+                    <h3>Содержание</h3>
+                    <ul class="toc-list">
+                        <li><a href="#intro">Что такое TypeScript</a></li>
+                        <li><a href="#features">Особенности TypeScript</a></li>
+                        <li><a href="#usage">Для чего используется TypeScript</a></li>
+                        <li><a href="#applications">Где используется TypeScript</a></li>
+                      </ul>
+                </div>
+                <br></br>
+                <div class="support-links">
+                    <a href="typeScript1.html" class="interes">Заинтересовало? Здесь можно посмотреть синтаксис!</a>
+                    <a href="typeScript2.html" class="interes">А здесь можно узнать о перспективах в профессии!</a>
+                </div>
+            </div>
+
+            <div class="content-main">
+                <div class="floating-logo">
+                    <img src="Typescript_logo_2020.svg.png" alt="">
+                </div>
+
+                <section id="intro" class="content-section fade-in">
+                    <h2>Что такое TypeScript</h2>
+                    <p>TypeScript — строго типизированный язык программирования, разработанный Microsoft, который является надмножеством JavaScript. Он добавляет к JavaScript статическую типизацию, классы, интерфейсы и другие возможности, что упрощает разработку больших и сложных приложений. <strong>С TypeScript вы сможете писать надежный код!</strong></p>
+                    <p>TypeScript компилируется в JavaScript, что позволяет использовать его в любом окружении, где поддерживается JavaScript. Это делает его идеальным выбором для разработки веб-приложений, мобильных приложений и серверных систем.</p>
+                </section>
+
+                <section id="features" class="content-section fade-in">
+                    <h2>Особенности TypeScript</h2>
+                    <p><strong>Статическая типизация:</strong> TypeScript позволяет указывать типы данных для переменных, функций и объектов. Это помогает выявлять ошибки на этапе компиляции и обеспечивает более надежный код. <strong>Представьте, как вы экономите часы на отладке!</strong></p>
+                    <p><strong>Совместимость с JavaScript:</strong> TypeScript полностью совместим с существующим кодом JavaScript, что позволяет постепенно переводить проекты на TypeScript.</p>
+                    <p><strong>Интерфейсы и классы:</strong> TypeScript поддерживает объектно-ориентированный подход к разработке, что упрощает организацию и поддержку кода.</p>
+                    <p><strong>Инструменты разработки:</strong> TypeScript поставляется с мощными инструментами, такими как компилятор, отладчик и линтер.</p>
+                    <p><strong>Совместимость с фреймворками:</strong> TypeScript широко используется в популярных фреймворках, таких как Angular, React и Vue.js.</p>
+                </section>
+
+                <section id="usage" class="content-section fade-in">
+                    <h2>Для чего используется TypeScript</h2>
+                    <p>TypeScript используется для разработки больших и сложных приложений, где важна надежность, поддерживаемость и масштабируемость кода. <strong>С TypeScript вы сможете создавать профессиональные решения!</strong></p>
+                    <p>TypeScript особенно полезен для проектов, в которых требуется объектно-ориентированный подход к разработке. Он позволяет создавать классы, интерфейсы и другие абстракции, которые упрощают организацию и поддержку кода.</p>
+                </section>
+
+                <section id="applications" class="content-section fade-in">
+                    <h2>Где используется TypeScript</h2>
+                    <p>TypeScript используется многими крупными компаниями и организациями, включая Microsoft, Google, Facebook и Airbnb. <strong>Ваш код может стать частью таких проектов!</strong></p>
+                    <p>TypeScript применяется в различных областях, включая веб-разработку, мобильную разработку, серверную разработку, разработку игр и многое другое. Он является универсальным языком программирования, который может быть использован для решения широкого круга задач.</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="" alt="" />
+        </div>
+
+        <div class="footer-services">
+            <h2>сервисы</h2>
+            <ul>
+				<li><a href="https://www.tbank.ru/" class="support-link">поддержать нашу работу</a></li>
+                <li>faq</li>
+                <li>предложить свой перевод</li>
+				<li><a href="https://github.com/master99101/prlicu" class="support-link">исходный код</a></li>
+				<li><a href="https://t.me/programmingLanguagesIcu" class="support-link">разработчики</a></li>
+				<li><a href="https://www.flaticon.com/authors/freepik" class="support-link">автор иконок</a></li>
+            </ul>
+        </div>
+        <div class="footer-contacts">
+            <h2>контакты</h2>
+            <p>+7315553156</p>
+            <p>support@programminglanguages.icu</p>
+            <p>@icusupporrt_bot</p>
+        <div class="search-bar">
+            <a href="https://dzen.ru"><img src="img/yandex.png" alt="Social 1"></a>
+            <a href="https://github.com/master99101/prlicu"><img src="img/github.png" alt="Social 2"></a>
+            <a href="https://t.me/programmingLanguagesIcu"><img src="img/telegram.png" alt="Social 3"></a>
+        </div>
+        </div>
+    </div>
+<div class="footer-bottom">
+    <p>© 2025 programming-languages.icu / <a href="terms.html">условия использования</a> / <a href="privacy.html">политика конфиденциальности</a></p>
+</div>
+</footer>
+<script src="script.js"></script>
+<script src="project-script.js"></script>
+
+<div class="modal" id="registration-modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <p>Регистрация и тестовые переводы пока недоступны<br> :( <br> </p>
+    </div>
+</div>
+</body>
+</html>

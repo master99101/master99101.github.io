@@ -1,1 +1,207 @@
-<p>sigma</p>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgrammingLanguageICU</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-style.css">
+</head>
+<body>
+<button class="support-button" onclick="openChat()">?</button>
+
+<div class="chat-container" id="chatContainer">
+    <div class="chat-header">
+        <h3>Для вопросов и предложений</h3>
+        <button class="close-chat" onclick="closeChat()">×</button>
+    </div>
+    
+    <div class="chat-messages" id="chatMessages">
+        <div class="chat-message system-message">Чем могу быть полезен?</div>
+    </div>
+    
+    <input type="text" class="chat-input" id="chatInput" placeholder="Введите сообщение...">
+</div>
+<header>
+    <nav>
+        <div class="menu">
+            <a href="index.html" class="logo"><img src="logo.png" alt="Логотип"></a>
+            <div class="dropdown">
+                <button class="dropdown-toggle">все языки</button>
+					  <ul class="dropdown-menu">
+						 <li><a href="PROJECT.html">Python</a></li>
+						 <li><a href="PROJECT2.html">C++</a></li>
+						 <li><a href="PROJECT3.html">C</a></li>
+						 <li><a href="PROJECT4.html">C#</a></li>
+						 <li><a href="PROJEKT5.html">Java</a></li>
+						 <li><a href="Js0.html">JavaScript</a></li>
+						 <li><a href="Ruby0.html">Ruby</a></li>
+						 <li><a href="Php0.html">PHP</a></li>
+						 <li><a href="Swift0.html">Swift</a></li>
+						 <li><a href="Go0.html">Go</a></li>
+<li><a href="Kotlin0.html">Kotlin</a></li>
+<li><a href="bash0.html">Bash</a></li>
+<li><a href="shell0.html">Shell</a></li>
+<li><a href="sql0.html">SQL</a></li>
+<li><a href="typeScript0.html">TypeScript</a></li>
+<li><a href="visualBasic0.html">VisualBasic</a></li>
+					  </ul>
+            </div>
+        </div>
+        <div class="domain-search-header">
+        </div>
+
+        <div class="language-auth">
+            <div class="language-switch">
+                <a href="#" class="active">русский</a>
+                <a href="#">english</a>
+            </div>
+            <div>
+                <button id="theme-toggle" class="theme-toggle">
+                    <img id="theme-icon" src="night.png" alt="Night Mode">
+                </button>
+            </div>
+            <div class="user-switch">
+                <a href="#" class="active">вход</a>
+                <a href="#">регистрация</a>
+            </div>
+        </div> <!-- Закрыли div -->
+    </nav>
+</header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Языки программирования</h1>
+            <p>Просто, без купюр =)</p>    
+            <div class="search-bar">
+                <input type="text" placeholder="ваш язык программирования">
+                <button id="check-domain-button">Поиск</button>
+    <div class="error-message" style="display: none; color: red; font-size: 0.9em; margin-top: 5px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="programming-languages">
+        <h2>Сложно выбрать? Вот наши рекомендации:</h2>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="popular">Популярные</button>
+            <button class="tab-button" data-tab="other">Подборка редакции</button>
+        </div>
+        <div class="tab-content" id="popular">
+<a href="Kotlin0.html">Kotlin</a>
+<a href="PROJEKT5.html">Java</a>
+            <a href="PROJECT.html">Python</a>
+            <a href="PROJECT4.html">C#</a>
+        </div>
+        <div class="tab-content" id="other" style="display: none;">
+            <a href="Swift0.html">Swift</a>
+            <a href="Js0.html">JavaScript</a>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="content-sidebar">
+                    <div class="table-of-contents">
+                        <h3>Содержание</h3>
+                        <ul class="toc-list">
+                            <li><a href="#intro">Что такое программирование</a></li>
+                            <li><a href="#programming-process">Процесс программирования</a></li>
+                            <li><a href="#languages">Языки программирования</a></li>
+                            <li><a href="#career">Карьера в программировании</a></li>
+                            <li><a href="#learning">Как начать изучение</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="content-main">
+                    <div class="floating-logo">
+                        <img src="" alt="">
+                    </div>
+                    
+                    <section id="intro" class="content-section fade-in">
+                        <h2>Что такое программирование</h2>
+                        <p>Программирование — это создание инструкций для компьютера, то есть программ. Обычно оно выглядит как написание программного кода на каком-нибудь языке программирования. С его помощью разработчики создают сайты, приложения и разнообразные цифровые сервисы.</p>
+                        <p>В более широком смысле программирование — любое создание инструкций для исполнителя. Например, мама показывает ребенку, как сделать себе бутерброд. С компьютерным программированием так же, только инструкции пишут в виде кода на специальных языках. А исполнитель — какое-либо устройство. Когда человек программирует, он, по сути, переводит задачи для машины на язык, который ей понятен.</p>
+                    </section>
+                    
+                    <section id="programming-process" class="content-section fade-in">
+                        <h2>Процесс программирования</h2>
+                        <p>Программирование — это процесс создания программ (программного обеспечения). Для этого программисты пишут исходный код на одном из языков программирования.</p>
+                        <p>Стоит отметить, что программирование это не только написание кода, но и решение задач, которые могут возникнуть в процессе разработки. Каждый язык программирования имеет свои особенности и предназначение, что делает выбор языка важным шагом для начинающего разработчика.</p>
+                        <p>Кроме того, важно отметить, что изучение языков программирования — это не только технический процесс, но и творческий. Программисты часто сталкиваются с задачами, требующими нестандартного подхода и креативного мышления.</p>
+                    </section>
+                    
+                    <section id="languages" class="content-section fade-in">
+                        <h2>Языки программирования</h2>
+                        <p>Существует более 300 языков программирования, но для успешной карьеры можно выбирать из десяти самых популярных. Еще правильнее будет сначала определиться с областью, в которой вы собираетесь работать, и только потом приступать к выбору языка.</p>
+                        <p>Одним из лучших языков для начинающих является Python. Этот популярный язык общего назначения хорош лаконичностью и простотой синтаксиса, его активно используют в IT-компаниях России и мира.</p>
+                        <p>Другими популярными языками считаются Java и C. Они сложнее, особенно для новичков, но владение ими обеспечивает лучшее понимание того, что вы делаете и что происходит с вашей программой.</p>
+                    </section>
+                    
+                    <section id="career" class="content-section fade-in">
+                        <h2>Карьера в программировании</h2>
+                        <p>Использование разных языков программирования зависит от цели деятельности. Например, в качестве серверных языков популярны PHP, Java, Ruby. Из клиентских языков наиболее перспективен JavaScript. Для разработки сложных высоконагруженных проектов требуется C++. На этом же языке пишутся игры.</p>
+                        <p>Еще одна перспективная сфера — разработка приложений для мобильных устройств. Тут используют Java, Objective-C, Swift. Любой опытный программист знает несколько языков, однако код на работе он пишет только на одном из них.</p>
+                    </section>
+                    
+                    <section id="learning" class="content-section fade-in">
+                        <h2>Как начать изучение</h2>
+                        <p>Начать изучение программирования можно разными путями. Для начинающих рекомендуется выбрать язык, который наиболее соответствует вашим целям и интересам. Если вы хотите заниматься веб-разработкой, стоит начать с HTML, CSS и JavaScript. Для анализа данных и машинного обучения подойдет Python.</p>
+                        <p>Существует множество бесплатных и платных ресурсов для изучения программирования: онлайн-курсы, видеоуроки, книги, интерактивные платформы. Важно не только теоретическое изучение, но и практика — решение задач, разработка собственных проектов.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="" alt="" />
+        </div>
+
+        <div class="footer-services">
+            <h2>сервисы</h2>
+            <ul>
+				<li><a href="https://www.tbank.ru/" class="support-link">поддержать нашу работу</a></li>
+                <li>faq</li>
+                <li>предложить свой перевод</li>
+				<li><a href="https://github.com/master99101/prlicu" class="support-link">исходный код</a></li>
+				<li><a href="https://t.me/programmingLanguagesIcu" class="support-link">разработчики</a></li>
+				<li><a href="https://www.flaticon.com/authors/freepik" class="support-link">автор иконок</a></li>
+            </ul>
+        </div>
+        <div class="footer-contacts">
+            <h2>контакты</h2>
+            <p>+7315553156</p>
+            <p>support@programminglanguages.icu</p>
+            <p>@icusupporrt_bot</p>
+        <div class="search-bar">
+            <a href="https://dzen.ru"><img src="img/yandex.png" alt="Social 1"></a>
+            <a href="https://github.com/master99101/prlicu"><img src="img/github.png" alt="Social 2"></a>
+            <a href="https://t.me/programmingLanguagesIcu"><img src="img/telegram.png" alt="Social 3"></a>
+        </div>
+        </div>
+    </div>
+<div class="footer-bottom">
+    <p>© 2025 programming-languages.icu / <a href="terms.html">условия использования</a> / <a href="privacy.html">политика конфиденциальности</a></p>
+</div>
+</footer>
+    <script src="script.js"></script>
+    <script src="project-script.js"></script>
+<!-- Модальное окно для сообщения о регистрации -->
+<div class="modal" id="registration-modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+<p>Регистрация и тестовые переводы пока недоступны<br> :( <br> </p>
+    </div>
+</div>
+
+</body>
+</html>
+

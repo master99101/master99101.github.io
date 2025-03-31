@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-style.css">
+</head>
+<body>
+<button class="support-button" onclick="openChat()">?</button>
+
+<div class="chat-container" id="chatContainer">
+    <div class="chat-header">
+        <h3>Для вопросов и предложений</h3>
+        <button class="close-chat" onclick="closeChat()">×</button>
+    </div>
+    
+    <div class="chat-messages" id="chatMessages">
+        <div class="chat-message system-message">Чем могу быть полезен?</div>
+    </div>
+    
+    <input type="text" class="chat-input" id="chatInput" placeholder="Введите сообщение...">
+</div>
+<header>
+    <nav>
+        <div class="menu">
+            <a href="index.html" class="logo"><img src="logo.png" alt="Логотип"></a>
+            <div class="dropdown">
+                <button class="dropdown-toggle">все языки</button>
+					  <ul class="dropdown-menu">
+						 <li><a href="PROJECT.html">Python</a></li>
+						 <li><a href="PROJECT2.html">C++</a></li>
+						 <li><a href="PROJECT3.html">C</a></li>
+						 <li><a href="PROJECT4.html">C#</a></li>
+						 <li><a href="PROJEKT5.html">Java</a></li>
+						 <li><a href="Js0.html">JavaScript</a></li>
+						 <li><a href="Ruby0.html">Ruby</a></li>
+						 <li><a href="Php0.html">PHP</a></li>
+						 <li><a href="Swift0.html">Swift</a></li>
+						 <li><a href="Go0.html">Go</a></li>
+<li><a href="Kotlin0.html">Kotlin</a></li>
+<li><a href="bash0.html">Bash</a></li>
+<li><a href="shell0.html">Shell</a></li>
+<li><a href="sql0.html">SQL</a></li>
+<li><a href="typeScript0.html">TypeScript</a></li>
+<li><a href="visualBasic0.html">VisualBasic</a></li>
+					  </ul>
+            </div>
+        </div>
+        <div class="domain-search-header">
+        </div>
+
+        <div class="language-auth">
+            <div class="language-switch">
+                <a href="#" class="active">русский</a>
+                <a href="#">english</a>
+            </div>
+            <div>
+                <button id="theme-toggle" class="theme-toggle">
+                    <img id="theme-icon" src="night.png" alt="Night Mode">
+                </button>
+            </div>
+            <div class="user-switch">
+                <a href="#" class="active">вход</a>
+                <a href="#">регистрация</a>
+            </div>
+        </div> <!-- Закрыли div -->
+    </nav>
+</header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Языки программирования</h1>
+            <p>Просто, без купюр =)</p>    
+            <div class="search-bar">
+                <input type="text" placeholder="ваш язык программирования">
+                <button id="check-domain-button">Поиск</button>
+    <div class="error-message" style="display: none; color: red; font-size: 0.9em; margin-top: 5px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="programming-languages">
+        <h2>Сложно выбрать? Вот наши рекомендации:</h2>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="popular">Популярные</button>
+            <button class="tab-button" data-tab="other">Подборка редакции</button>
+        </div>
+        <div class="tab-content" id="popular">
+<a href="Kotlin0.html">Kotlin</a>
+<a href="PROJEKT5.html">Java</a>
+            <a href="PROJECT.html">Python</a>
+            <a href="PROJECT4.html">C#</a>
+        </div>
+        <div class="tab-content" id="other" style="display: none;">
+            <a href="Swift0.html">Swift</a>
+            <a href="Js0.html">JavaScript</a>
+        </div>
+    </section>
+<main>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="content-sidebar">
+                <div class="table-of-contents">
+                    <h3>Содержание</h3>
+                    <ul class="toc-list">
+                        <li><a href="#what-is-cplusplus">Что такое C++?</a></li>
+                        <li><a href="#cplusplus-history">История создания и применения C++</a></li>
+                    </ul>
+                </div>
+                <br></br>
+                <div class="support-links">
+                    <a href="CPlusPlus1.html" class="interes">Заинтересовало? Здесь можно посмотреть синтаксис!</a>
+                    <a href="CPlusPlus2.html" class="interes">А здесь можно узнать о перспективах в профессии!</a>
+                </div>
+            </div>
+            
+            <div class="content-main">
+                <div class="floating-logo">
+                    <img src="ISO_C++_Logo.svg.png" alt="">
+                </div>
+                <section id="what-is-cplusplus" class="content-section fade-in">
+                    <h2>Что такое C++?</h2>
+                    <p>C++ (читается си-плюс-плюс) — это компилируемый, статически типизированный язык программирования общего назначения. Он поддерживает процедурное, объектно-ориентированное и обобщённое программирование.</p>
+                    <p>Язык обладает богатой стандартной библиотекой, включающей контейнеры, алгоритмы, ввод-вывод, регулярные выражения и поддержку многопоточности. C++ сочетает в себе свойства как высокоуровневых, так и низкоуровневых языков.</p>
+                    <p>В сравнении с языком C, C++ уделяет больше внимания объектно-ориентированному и обобщённому программированию. Существует множество реализаций C++, как бесплатных, так и коммерческих, для различных платформ, таких как GCC, Clang, Visual C++, Intel C++ Compiler и другие. C++ оказал значительное влияние на другие языки программирования, включая Java и C#.</p>
+                </section>
+                
+                <section id="cplusplus-history" class="content-section fade-in">
+                    <h2>История создания и применения C++</h2>
+                    <p>Официальная стандартизация языка началась в 1998 году с публикацией стандарта ISO/IEC 14882:1998 (C++98), разработанного комитетом по стандартизации C++. Этот стандарт не описывал способы именования объектов и некоторые детали обработки исключений, что делало несовместимым объектный код, созданный различными компиляторами.</p>
+                    <p>В 2003 году был опубликован стандарт C++ ISO/IEC 14882:2003, исправляющий ошибки предыдущей версии. В 2005 году вышел отчёт Library Technical Report 1 (TR1), описывающий расширения стандартной библиотеки, которые должны были быть включены в следующую версию стандарта.</p>
+                    <p>С 2009 года началась работа над обновлением стандарта, который в 2011 году был опубликован как C++11, включающий дополнения в ядре языка и расширение стандартной библиотеки.</p>
+                    <p>Следующая версия, C++14, вышла в августе 2014 года и содержала уточнения и исправления ошибок. Стандарт C++17, опубликованный в декабре 2017 года, добавил параллельные версии стандартных алгоритмов и удалил устаревшие элементы.</p>
+                    <p>Последняя стабильная версия на данный момент — C++20, которая включает поддержку модулей и другие новшества.</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="" alt="" />
+        </div>
+
+        <div class="footer-services">
+            <h2>сервисы</h2>
+            <ul>
+				<li><a href="https://www.tbank.ru/" class="support-link">поддержать нашу работу</a></li>
+                <li>faq</li>
+                <li>предложить свой перевод</li>
+				<li><a href="https://github.com/master99101/prlicu" class="support-link">исходный код</a></li>
+				<li><a href="https://t.me/programmingLanguagesIcu" class="support-link">разработчики</a></li>
+				<li><a href="https://www.flaticon.com/authors/freepik" class="support-link">автор иконок</a></li>
+            </ul>
+        </div>
+        <div class="footer-contacts">
+            <h2>контакты</h2>
+            <p>+7315553156</p>
+            <p>support@programminglanguages.icu</p>
+            <p>@icusupporrt_bot</p>
+        <div class="search-bar">
+            <a href="https://dzen.ru"><img src="img/yandex.png" alt="Social 1"></a>
+            <a href="https://github.com/master99101/prlicu"><img src="img/github.png" alt="Social 2"></a>
+            <a href="https://t.me/programmingLanguagesIcu"><img src="img/telegram.png" alt="Social 3"></a>
+        </div>
+        </div>
+    </div>
+<div class="footer-bottom">
+    <p>© 2025 programming-languages.icu / <a href="terms.html">условия использования</a> / <a href="privacy.html">политика конфиденциальности</a></p>
+</div>
+</footer>
+    <script src="script.js"></script>
+    <script src="project-script.js"></script>
+
+<!-- Модальное окно для сообщения о регистрации -->
+<div class="modal" id="registration-modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <p>Регистрация и тестовые переводы пока недоступны<br> :( <br> </p>
+    </div>
+</div>
+</body>
+</html>
+
